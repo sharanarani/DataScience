@@ -57,9 +57,6 @@ class signup:
              return True 
 
 
-# In[23]:
-
-
 #signup
 username=input("Enter username:")
 obj=signup()#initializing class object
@@ -73,10 +70,6 @@ if obj.username(username)==True:#calling class method & checking if username mee
             print("Registration successful")
         else:
             print("invalid password")
-
-
-# In[25]:
-
 
 #signin 
 un=input("Enter username:")
@@ -92,3 +85,15 @@ for i in coll.find({},{"_id":0}):
 if c!=0:
     print("Wrong username of password")
 
+#forgot passowrd
+Username=input("Enter username:")
+c=0
+for i in coll.find({},{"_id":0}):
+    if i["username"]==Username:
+        print("password is", i["Password"])
+        c=0
+        break
+    else:
+        c=c+1
+if c!=0:
+    print("username do not exist")
