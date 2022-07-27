@@ -4,7 +4,7 @@
 # In[21]:
 
 
-'''Run the class code and then execute signup for registration and then signin for login'''
+'''Run the class code and then execute signup for registration and then signin for login  written this code uusing jupyternotebook, class is in cell1, signup is in cell 2, sign in is in cell 3 and forgot password is in cell 3'''
 class signup:
     def username(self, x):
         import re
@@ -96,4 +96,4 @@ for i in coll.find({},{"_id":0}):
     else:
         c=c+1
 if c!=0:
-    print("username do not exist")
+    print("username do not exist, please register")
